@@ -42,8 +42,7 @@ const MayorNota = estudiantes[0];
 const MenorNota = estudiantes[estudiantes.length - 1];
 let masculinos = 0;
 let femeninos = 0;
-estudiantes.forEach((element, index) => {
-    console.log(index, element);
+estudiantes.forEach((element) => {
     if (element.sexo === "Masculino")
         masculinos++;
     if (element.sexo === "Femenino")
