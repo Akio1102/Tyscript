@@ -39,14 +39,16 @@ const V2 = new Nivel(4, "Artemis", Node);
 const J1 = new Nivel(5, "Apolo", NetCore);
 const J2 = new Nivel(6, "Apolo", NetCore);
 
-const Zharick = new Camper(1, "Zharick", V1);
-const Akio = new Camper(2, "Akio", V1);
-const Nicolas = new Camper(3, "Nicolas", V1);
-const Amed = new Camper(4, "Amed", V1);
-const Jean = new Camper(5, "Jean", M1);
-const Julian = new Camper(6, "Julian", J1);
-const Karen = new Camper(7, "Karen", J1);
+const Zharick = new Camper(1, "Zharick", V1, "En Proceso");
+const Akio = new Camper(2, "Akio", V1, "En Proceso");
+const Nicolas = new Camper(3, "Nicolas", V1, "En Proceso");
+const Amed = new Camper(4, "Amed", V1, "En Proceso");
+const Jean = new Camper(5, "Jean", M1, "En Proceso");
+const Julian = new Camper(6, "Julian", J1, "En Proceso");
+const Karen = new Camper(7, "Karen", J1, "En Proceso");
 
 const presencial = new Contrato(1, [Karen, Julian], "Presencial");
-const remoto = new Contrato(2, [Amed, Jean], "Remeto");
+const remoto = new Contrato(2, [Amed, Jean], "Remoto");
 const Hibidro = new Contrato(3, [Nicolas, Akio, Zharick], "Hibrido");
+
+console.log(presencial);

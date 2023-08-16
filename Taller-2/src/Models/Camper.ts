@@ -4,6 +4,7 @@ export default class {
   constructor(
     public readonly id: number,
     public nombre: string,
-    public nivel: Nivel
+    public nivel: Nivel,
+    public stateNivel: string
   ) {}
 }
