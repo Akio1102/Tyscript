@@ -47,8 +47,12 @@ const Jean = new Camper(5, "Jean", M1, "En Proceso");
 const Julian = new Camper(6, "Julian", J1, "En Proceso");
 const Karen = new Camper(7, "Karen", J1, "En Proceso");
 
-const presencial = new Contrato(1, [Karen, Julian], "Presencial");
-const remoto = new Contrato(2, [Amed, Jean], "Remoto");
-const Hibidro = new Contrato(3, [Nicolas, Akio, Zharick], "Hibrido");
+const presencial = new Contrato(1, Karen, "Presencial");
+const remoto = new Contrato(2, Amed, "Remoto");
+const Hibidro = new Contrato(3, Nicolas, "Hibrido");
 
-console.log(presencial);
+console.log(presencial.validador());
+
+Campus.quantity([Zharick,Akio,Nicolas,Amed])
+ 
+console.log(Campus.Cantidad());
